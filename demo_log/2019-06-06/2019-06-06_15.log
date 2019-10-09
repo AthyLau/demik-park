@@ -1,0 +1,5 @@
+2019-06-06_15 15:25:25.957 INFO  [Thread-12] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu Jun 06 09:53:06 CST 2019]; root of context hierarchy
+2019-06-06_15 15:25:25.997 INFO  [Thread-12] org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-06-06_15 15:25:26.006 INFO  [Thread-12] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-06-06_15 15:25:26.007 INFO  [Thread-12] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-06-06_15 15:25:26.020 INFO  [Thread-12] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

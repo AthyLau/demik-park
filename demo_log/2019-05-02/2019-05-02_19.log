@@ -1,0 +1,965 @@
+2019-05-02_19 19:08:06.687 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-02_19 19:08:06.692 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-02_19 19:08:06.718 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2019-05-02_19 19:09:01.184 INFO  [Thread-10] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 18:47:16 CST 2019]; root of context hierarchy
+2019-05-02_19 19:09:01.187 INFO  [Thread-10] org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-05-02_19 19:09:01.189 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-05-02_19 19:09:01.189 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-05-02_19 19:09:01.196 INFO  [Thread-10] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-05-02_19 19:09:03.826 INFO  [main] com.example.park.ParkApplication - Starting ParkApplication on bogon with PID 2108 (/Users/liubing/Desktop/code/IdeaProjects/park/target/classes started by liubing in /Users/liubing/Desktop/code/IdeaProjects/park)
+2019-05-02_19 19:09:03.828 INFO  [main] com.example.park.ParkApplication - No active profile set, falling back to default profiles: default
+2019-05-02_19 19:09:03.862 INFO  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:09:03 CST 2019]; root of context hierarchy
+2019-05-02_19 19:09:03.966 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-02_19 19:09:04.709 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d24a560f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-02_19 19:09:04.980 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8084 (http)
+2019-05-02_19 19:09:04.991 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:09:05.000 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-02_19 19:09:05.000 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-05-02_19 19:09:05.078 INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-02_19 19:09:05.078 INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1216 ms
+2019-05-02_19 19:09:05.213 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-02_19 19:09:05.214 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-05-02_19 19:09:05.216 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-02_19 19:09:05.217 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-02_19 19:09:05.217 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-02_19 19:09:05.217 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-02_19 19:09:05.217 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-05-02_19 19:09:05.217 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-05-02_19 19:09:05.310 INFO  [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+2019-05-02_19 19:09:05.672 INFO  [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-02_19 19:09:05.935 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/addCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.addCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:09:05.935 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/deleteCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.deleteCar(com.example.park.pojo.dto.CarIdDTO)
+2019-05-02_19 19:09:05.935 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/updateCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.updateCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:09:05.936 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findAll()
+2019-05-02_19 19:09:05.936 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByType],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByType(com.example.park.pojo.dto.CarTypeDTO)
+2019-05-02_19 19:09:05.936 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:09:05.937 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/addPlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.addPlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:09:05.938 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findAll()
+2019-05-02_19 19:09:05.938 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/deletePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.deletePlace(com.example.park.pojo.dto.CarPlactIdDTO)
+2019-05-02_19 19:09:05.938 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/updatePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.updatePlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:09:05.938 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByStatus],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByStatus(com.example.park.pojo.dto.PlaceStatusDTO)
+2019-05-02_19 19:09:05.939 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByPlaceName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByPlaceName(com.example.park.pojo.dto.PlaceNameDTO)
+2019-05-02_19 19:09:05.941 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/start],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.start(com.example.park.pojo.dto.ParkStartDTO)
+2019-05-02_19 19:09:05.942 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findAll()
+2019-05-02_19 19:09:05.942 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:09:05.943 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByMasterId],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByMasterId(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:09:05.943 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/end],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.end(com.example.park.pojo.dto.ParkEndDTO)
+2019-05-02_19 19:09:05.944 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.login(com.example.park.pojo.dto.LoginDTO)
+2019-05-02_19 19:09:05.944 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.deleteUser(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:09:05.944 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByRole],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByRole(com.example.park.pojo.dto.UserRoleIdDTO)
+2019-05-02_19 19:09:05.945 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByUserName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByUserName(com.example.park.pojo.dto.UserNameDTO)
+2019-05-02_19 19:09:05.945 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.updateUser(com.example.park.pojo.dto.UpdateUserInfoDTO)
+2019-05-02_19 19:09:05.945 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findAllUser],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findAllUser()
+2019-05-02_19 19:09:05.945 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/add],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.addUser(com.example.park.pojo.dto.UserDTO)
+2019-05-02_19 19:09:05.947 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-02_19 19:09:05.948 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-02_19 19:09:05.948 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-02_19 19:09:05.950 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-02_19 19:09:05.950 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-02_19 19:09:06.027 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-02_19 19:09:06.159 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:09:03 CST 2019]; root of context hierarchy
+2019-05-02_19 19:09:06.206 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:09:06.206 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:09:06.240 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:09:06.484 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-05-02_19 19:09:06.486 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-05-02_19 19:09:06.486 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-02_19 19:09:06.490 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-05-02_19 19:09:06.491 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-05-02_19 19:09:06.493 INFO  [main] org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-05-02_19 19:09:06.493 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-05-02_19 19:09:06.503 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-05-02_19 19:09:06.612 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-05-02_19 19:09:06.737 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_1
+2019-05-02_19 19:09:06.753 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_2
+2019-05-02_19 19:09:06.810 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:09:06.832 INFO  [main] org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-05-02_19 19:09:06.841 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8084 (http)
+2019-05-02_19 19:09:06.846 INFO  [main] com.example.park.ParkApplication - Started ParkApplication in 3.263 seconds (JVM running for 3.731)
+2019-05-02_19 19:09:18.232 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-02_19 19:09:18.234 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-02_19 19:09:18.248 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2019-05-02_19 19:44:21.272 INFO  [Thread-10] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:09:03 CST 2019]; root of context hierarchy
+2019-05-02_19 19:44:21.287 INFO  [Thread-10] org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-05-02_19 19:44:21.294 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-05-02_19 19:44:21.294 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-05-02_19 19:44:21.304 INFO  [Thread-10] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-05-02_19 19:44:23.734 INFO  [main] com.example.park.ParkApplication - Starting ParkApplication on bogon with PID 2165 (/Users/liubing/Desktop/code/IdeaProjects/park/target/classes started by liubing in /Users/liubing/Desktop/code/IdeaProjects/park)
+2019-05-02_19 19:44:23.736 INFO  [main] com.example.park.ParkApplication - No active profile set, falling back to default profiles: default
+2019-05-02_19 19:44:23.772 INFO  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:44:23 CST 2019]; root of context hierarchy
+2019-05-02_19 19:44:23.879 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-02_19 19:44:24.614 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d24a560f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-02_19 19:44:24.887 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8084 (http)
+2019-05-02_19 19:44:24.897 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:44:24.906 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-02_19 19:44:24.906 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-05-02_19 19:44:24.987 INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-02_19 19:44:24.987 INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1215 ms
+2019-05-02_19 19:44:25.122 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-02_19 19:44:25.124 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-05-02_19 19:44:25.126 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-02_19 19:44:25.126 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-02_19 19:44:25.126 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-02_19 19:44:25.126 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-02_19 19:44:25.126 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-05-02_19 19:44:25.126 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-05-02_19 19:44:25.217 INFO  [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+2019-05-02_19 19:44:25.573 INFO  [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-02_19 19:44:25.835 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/addCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.addCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:44:25.835 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/deleteCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.deleteCar(com.example.park.pojo.dto.CarIdDTO)
+2019-05-02_19 19:44:25.836 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/updateCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.updateCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:44:25.836 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findAll()
+2019-05-02_19 19:44:25.836 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByType],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByType(com.example.park.pojo.dto.CarTypeDTO)
+2019-05-02_19 19:44:25.836 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:44:25.837 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/addPlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.addPlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:44:25.838 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findAll()
+2019-05-02_19 19:44:25.838 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/deletePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.deletePlace(com.example.park.pojo.dto.CarPlactIdDTO)
+2019-05-02_19 19:44:25.838 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/updatePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.updatePlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:44:25.838 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByStatus],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByStatus(com.example.park.pojo.dto.PlaceStatusDTO)
+2019-05-02_19 19:44:25.839 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByPlaceName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByPlaceName(com.example.park.pojo.dto.PlaceNameDTO)
+2019-05-02_19 19:44:25.842 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/start],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.start(com.example.park.pojo.dto.ParkStartDTO)
+2019-05-02_19 19:44:25.842 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findAll()
+2019-05-02_19 19:44:25.842 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:44:25.843 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByMasterId],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByMasterId(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:44:25.843 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/end],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.end(com.example.park.pojo.dto.ParkEndDTO)
+2019-05-02_19 19:44:25.844 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/add],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.addUser(com.example.park.pojo.dto.UserDTO)
+2019-05-02_19 19:44:25.845 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.login(com.example.park.pojo.dto.LoginDTO)
+2019-05-02_19 19:44:25.845 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.deleteUser(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:44:25.845 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByRole],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByRole(com.example.park.pojo.dto.UserRoleIdDTO)
+2019-05-02_19 19:44:25.845 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByUserName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByUserName(com.example.park.pojo.dto.UserNameDTO)
+2019-05-02_19 19:44:25.845 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.updateUser(com.example.park.pojo.dto.UpdateUserInfoDTO)
+2019-05-02_19 19:44:25.846 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findAllUser],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findAllUser()
+2019-05-02_19 19:44:25.848 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-02_19 19:44:25.848 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-02_19 19:44:25.849 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-02_19 19:44:25.850 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-02_19 19:44:25.851 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-02_19 19:44:25.928 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-02_19 19:44:26.057 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:44:23 CST 2019]; root of context hierarchy
+2019-05-02_19 19:44:26.101 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:44:26.101 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:44:26.134 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:44:26.372 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-05-02_19 19:44:26.373 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-05-02_19 19:44:26.373 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-02_19 19:44:26.378 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-05-02_19 19:44:26.379 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-05-02_19 19:44:26.381 INFO  [main] org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-05-02_19 19:44:26.381 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-05-02_19 19:44:26.391 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-05-02_19 19:44:26.411 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-05-02_19 19:44:26.627 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_1
+2019-05-02_19 19:44:26.642 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_2
+2019-05-02_19 19:44:26.684 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:44:26.706 INFO  [main] org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-05-02_19 19:44:26.714 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8084 (http)
+2019-05-02_19 19:44:26.718 INFO  [main] com.example.park.ParkApplication - Started ParkApplication in 3.212 seconds (JVM running for 3.663)
+2019-05-02_19 19:44:48.471 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-02_19 19:44:48.472 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-02_19 19:44:48.500 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2019-05-02_19 19:48:21.111 INFO  [http-nio-8084-exec-10] org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-05-02_19 19:48:21.172 ERROR [http-nio-8084-exec-10] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'c.master_id' in 'where clause'
+### The error may exist in com/example/park/mapper/ParkMapper.java (best guess)
+### The error may involve com.example.park.mapper.ParkMapper.findByMasterId-Inline
+### The error occurred while setting parameters
+### SQL: select p.park_id,p.park_start_time,p.park_end_time,p.car_place_id,cp.car_place_name,p.car_id,c.car_number,p.park_fee from cars as c,car_place as cp,park_log as p where p.car_id = c.car_id and p.car_place_id = cp.car_place_id and c.master_id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'c.master_id' in 'where clause'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'c.master_id' in 'where clause'] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'c.master_id' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:143)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy96.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy77.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy86.findByMasterId(Unknown Source)
+	at com.example.park.service.ParkService.findByMasterId(ParkService.java:165)
+	at com.example.park.controller.ParkController.findByMasterId(ParkController.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02_19 19:48:49.972 INFO  [Thread-10] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:44:23 CST 2019]; root of context hierarchy
+2019-05-02_19 19:48:49.976 INFO  [Thread-10] org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-05-02_19 19:48:49.978 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-05-02_19 19:48:49.978 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-05-02_19 19:48:49.984 INFO  [Thread-10] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-05-02_19 19:48:52.362 INFO  [main] com.example.park.ParkApplication - Starting ParkApplication on bogon with PID 2168 (/Users/liubing/Desktop/code/IdeaProjects/park/target/classes started by liubing in /Users/liubing/Desktop/code/IdeaProjects/park)
+2019-05-02_19 19:48:52.364 INFO  [main] com.example.park.ParkApplication - No active profile set, falling back to default profiles: default
+2019-05-02_19 19:48:52.400 INFO  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:48:52 CST 2019]; root of context hierarchy
+2019-05-02_19 19:48:52.506 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-02_19 19:48:53.215 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d24a560f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-02_19 19:48:53.492 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8084 (http)
+2019-05-02_19 19:48:53.503 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:48:53.512 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-02_19 19:48:53.513 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-05-02_19 19:48:53.590 INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-02_19 19:48:53.590 INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1190 ms
+2019-05-02_19 19:48:53.725 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-02_19 19:48:53.726 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-05-02_19 19:48:53.728 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-02_19 19:48:53.729 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-02_19 19:48:53.729 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-02_19 19:48:53.729 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-02_19 19:48:53.729 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-05-02_19 19:48:53.729 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-05-02_19 19:48:53.820 INFO  [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+2019-05-02_19 19:48:54.168 INFO  [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-02_19 19:48:54.508 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/addCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.addCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:48:54.509 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/deleteCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.deleteCar(com.example.park.pojo.dto.CarIdDTO)
+2019-05-02_19 19:48:54.509 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/updateCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.updateCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:48:54.509 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findAll()
+2019-05-02_19 19:48:54.509 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByType],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByType(com.example.park.pojo.dto.CarTypeDTO)
+2019-05-02_19 19:48:54.510 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:48:54.511 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/addPlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.addPlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:48:54.511 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findAll()
+2019-05-02_19 19:48:54.511 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/deletePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.deletePlace(com.example.park.pojo.dto.CarPlactIdDTO)
+2019-05-02_19 19:48:54.512 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/updatePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.updatePlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:48:54.512 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByStatus],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByStatus(com.example.park.pojo.dto.PlaceStatusDTO)
+2019-05-02_19 19:48:54.512 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByPlaceName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByPlaceName(com.example.park.pojo.dto.PlaceNameDTO)
+2019-05-02_19 19:48:54.515 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/start],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.start(com.example.park.pojo.dto.ParkStartDTO)
+2019-05-02_19 19:48:54.515 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findAll()
+2019-05-02_19 19:48:54.516 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:48:54.516 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByMasterId],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByMasterId(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:48:54.516 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/end],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.end(com.example.park.pojo.dto.ParkEndDTO)
+2019-05-02_19 19:48:54.518 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/add],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.addUser(com.example.park.pojo.dto.UserDTO)
+2019-05-02_19 19:48:54.518 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.login(com.example.park.pojo.dto.LoginDTO)
+2019-05-02_19 19:48:54.518 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.deleteUser(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:48:54.518 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByRole],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByRole(com.example.park.pojo.dto.UserRoleIdDTO)
+2019-05-02_19 19:48:54.518 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByUserName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByUserName(com.example.park.pojo.dto.UserNameDTO)
+2019-05-02_19 19:48:54.519 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.updateUser(com.example.park.pojo.dto.UpdateUserInfoDTO)
+2019-05-02_19 19:48:54.519 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findAllUser],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findAllUser()
+2019-05-02_19 19:48:54.521 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-02_19 19:48:54.521 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-02_19 19:48:54.522 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-02_19 19:48:54.524 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-02_19 19:48:54.524 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-02_19 19:48:54.601 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-02_19 19:48:54.725 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:48:52 CST 2019]; root of context hierarchy
+2019-05-02_19 19:48:54.763 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:48:54.763 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:48:54.789 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:48:54.985 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-05-02_19 19:48:54.987 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-05-02_19 19:48:54.987 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-02_19 19:48:54.992 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-05-02_19 19:48:54.992 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-05-02_19 19:48:54.994 INFO  [main] org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-05-02_19 19:48:54.994 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-05-02_19 19:48:55.007 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-05-02_19 19:48:55.028 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-05-02_19 19:48:55.245 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_1
+2019-05-02_19 19:48:55.261 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_2
+2019-05-02_19 19:48:55.306 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:48:55.329 INFO  [main] org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-05-02_19 19:48:55.337 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8084 (http)
+2019-05-02_19 19:48:55.342 INFO  [main] com.example.park.ParkApplication - Started ParkApplication in 3.209 seconds (JVM running for 3.663)
+2019-05-02_19 19:49:17.354 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-02_19 19:49:17.355 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-02_19 19:49:17.368 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2019-05-02_19 19:51:38.129 ERROR [http-nio-8084-exec-5] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at java.util.Calendar.setTime(Calendar.java:1770)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:943)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:936)
+	at java.text.DateFormat.format(DateFormat.java:345)
+	at com.example.park.service.ParkService.getVO(ParkService.java:83)
+	at com.example.park.service.ParkService.end(ParkService.java:61)
+	at com.example.park.controller.ParkController.end(ParkController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02_19 19:52:49.170 INFO  [Thread-10] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:48:52 CST 2019]; root of context hierarchy
+2019-05-02_19 19:52:49.173 INFO  [Thread-10] org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-05-02_19 19:52:49.174 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-05-02_19 19:52:49.174 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-05-02_19 19:52:49.180 INFO  [Thread-10] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-05-02_19 19:52:51.742 INFO  [main] com.example.park.ParkApplication - Starting ParkApplication on bogon with PID 2173 (/Users/liubing/Desktop/code/IdeaProjects/park/target/classes started by liubing in /Users/liubing/Desktop/code/IdeaProjects/park)
+2019-05-02_19 19:52:51.745 INFO  [main] com.example.park.ParkApplication - No active profile set, falling back to default profiles: default
+2019-05-02_19 19:52:51.780 INFO  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:52:51 CST 2019]; root of context hierarchy
+2019-05-02_19 19:52:51.887 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-02_19 19:52:52.603 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4035af7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-02_19 19:52:52.875 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8084 (http)
+2019-05-02_19 19:52:52.886 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:52:52.895 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-02_19 19:52:52.895 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-05-02_19 19:52:52.974 INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-02_19 19:52:52.974 INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1194 ms
+2019-05-02_19 19:52:53.110 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-02_19 19:52:53.112 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-05-02_19 19:52:53.114 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-02_19 19:52:53.114 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-02_19 19:52:53.114 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-02_19 19:52:53.114 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-02_19 19:52:53.114 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-05-02_19 19:52:53.115 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-05-02_19 19:52:53.207 INFO  [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+2019-05-02_19 19:52:53.558 INFO  [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-02_19 19:52:53.822 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/addCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.addCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:52:53.823 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/deleteCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.deleteCar(com.example.park.pojo.dto.CarIdDTO)
+2019-05-02_19 19:52:53.823 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/updateCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.updateCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:52:53.823 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findAll()
+2019-05-02_19 19:52:53.824 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByType],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByType(com.example.park.pojo.dto.CarTypeDTO)
+2019-05-02_19 19:52:53.824 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:52:53.825 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/addPlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.addPlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:52:53.825 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findAll()
+2019-05-02_19 19:52:53.826 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/deletePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.deletePlace(com.example.park.pojo.dto.CarPlactIdDTO)
+2019-05-02_19 19:52:53.826 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/updatePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.updatePlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:52:53.826 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByStatus],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByStatus(com.example.park.pojo.dto.PlaceStatusDTO)
+2019-05-02_19 19:52:53.826 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByPlaceName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByPlaceName(com.example.park.pojo.dto.PlaceNameDTO)
+2019-05-02_19 19:52:53.829 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/start],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.start(com.example.park.pojo.dto.ParkStartDTO)
+2019-05-02_19 19:52:53.830 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findAll()
+2019-05-02_19 19:52:53.830 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:52:53.830 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByMasterId],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByMasterId(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:52:53.830 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/end],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.end(com.example.park.pojo.dto.ParkEndDTO)
+2019-05-02_19 19:52:53.832 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/add],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.addUser(com.example.park.pojo.dto.UserDTO)
+2019-05-02_19 19:52:53.832 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.login(com.example.park.pojo.dto.LoginDTO)
+2019-05-02_19 19:52:53.832 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.deleteUser(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:52:53.832 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByRole],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByRole(com.example.park.pojo.dto.UserRoleIdDTO)
+2019-05-02_19 19:52:53.832 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByUserName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByUserName(com.example.park.pojo.dto.UserNameDTO)
+2019-05-02_19 19:52:53.833 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.updateUser(com.example.park.pojo.dto.UpdateUserInfoDTO)
+2019-05-02_19 19:52:53.833 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findAllUser],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findAllUser()
+2019-05-02_19 19:52:53.835 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-02_19 19:52:53.835 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-02_19 19:52:53.836 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-02_19 19:52:53.838 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-02_19 19:52:53.838 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-02_19 19:52:53.916 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-02_19 19:52:54.044 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:52:51 CST 2019]; root of context hierarchy
+2019-05-02_19 19:52:54.089 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:52:54.089 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:52:54.122 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:52:54.372 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-05-02_19 19:52:54.373 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-05-02_19 19:52:54.374 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-02_19 19:52:54.378 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-05-02_19 19:52:54.378 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-05-02_19 19:52:54.380 INFO  [main] org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-05-02_19 19:52:54.380 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-05-02_19 19:52:54.390 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-05-02_19 19:52:54.490 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-05-02_19 19:52:54.612 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_1
+2019-05-02_19 19:52:54.627 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_2
+2019-05-02_19 19:52:54.673 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:52:54.698 INFO  [main] org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-05-02_19 19:52:54.706 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8084 (http)
+2019-05-02_19 19:52:54.711 INFO  [main] com.example.park.ParkApplication - Started ParkApplication in 3.198 seconds (JVM running for 3.647)
+2019-05-02_19 19:53:28.064 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-02_19 19:53:28.064 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-02_19 19:53:28.079 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2019-05-02_19 19:53:28.330 ERROR [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at java.util.Calendar.setTime(Calendar.java:1770)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:943)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:936)
+	at java.text.DateFormat.format(DateFormat.java:345)
+	at com.example.park.service.ParkService.getVO(ParkService.java:84)
+	at com.example.park.service.ParkService.end(ParkService.java:61)
+	at com.example.park.controller.ParkController.end(ParkController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02_19 19:53:37.011 INFO  [Thread-10] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:52:51 CST 2019]; root of context hierarchy
+2019-05-02_19 19:53:37.016 INFO  [Thread-10] org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-05-02_19 19:53:37.018 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-05-02_19 19:53:37.019 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-05-02_19 19:53:37.026 INFO  [Thread-10] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-05-02_19 19:53:38.632 INFO  [main] com.example.park.ParkApplication - Starting ParkApplication on bogon with PID 2176 (/Users/liubing/Desktop/code/IdeaProjects/park/target/classes started by liubing in /Users/liubing/Desktop/code/IdeaProjects/park)
+2019-05-02_19 19:53:38.634 INFO  [main] com.example.park.ParkApplication - No active profile set, falling back to default profiles: default
+2019-05-02_19 19:53:38.670 INFO  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:53:38 CST 2019]; root of context hierarchy
+2019-05-02_19 19:53:38.776 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-02_19 19:53:39.503 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d24a560f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-02_19 19:53:39.779 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8084 (http)
+2019-05-02_19 19:53:39.789 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:53:39.799 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-02_19 19:53:39.799 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-05-02_19 19:53:39.883 INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-02_19 19:53:39.883 INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1213 ms
+2019-05-02_19 19:53:40.020 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-02_19 19:53:40.022 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-05-02_19 19:53:40.024 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-02_19 19:53:40.025 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-02_19 19:53:40.025 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-02_19 19:53:40.025 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-02_19 19:53:40.025 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-05-02_19 19:53:40.025 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-05-02_19 19:53:40.118 INFO  [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+2019-05-02_19 19:53:40.473 INFO  [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-02_19 19:53:40.734 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/addCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.addCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:53:40.735 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/deleteCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.deleteCar(com.example.park.pojo.dto.CarIdDTO)
+2019-05-02_19 19:53:40.735 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/updateCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.updateCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:53:40.735 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findAll()
+2019-05-02_19 19:53:40.735 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByType],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByType(com.example.park.pojo.dto.CarTypeDTO)
+2019-05-02_19 19:53:40.736 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:53:40.737 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/addPlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.addPlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:53:40.737 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findAll()
+2019-05-02_19 19:53:40.737 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/deletePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.deletePlace(com.example.park.pojo.dto.CarPlactIdDTO)
+2019-05-02_19 19:53:40.738 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/updatePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.updatePlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:53:40.738 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByStatus],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByStatus(com.example.park.pojo.dto.PlaceStatusDTO)
+2019-05-02_19 19:53:40.738 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByPlaceName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByPlaceName(com.example.park.pojo.dto.PlaceNameDTO)
+2019-05-02_19 19:53:40.741 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/start],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.start(com.example.park.pojo.dto.ParkStartDTO)
+2019-05-02_19 19:53:40.742 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findAll()
+2019-05-02_19 19:53:40.742 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:53:40.742 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByMasterId],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByMasterId(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:53:40.743 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/end],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.end(com.example.park.pojo.dto.ParkEndDTO)
+2019-05-02_19 19:53:40.744 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/add],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.addUser(com.example.park.pojo.dto.UserDTO)
+2019-05-02_19 19:53:40.744 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.login(com.example.park.pojo.dto.LoginDTO)
+2019-05-02_19 19:53:40.744 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.deleteUser(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:53:40.744 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByRole],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByRole(com.example.park.pojo.dto.UserRoleIdDTO)
+2019-05-02_19 19:53:40.745 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByUserName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByUserName(com.example.park.pojo.dto.UserNameDTO)
+2019-05-02_19 19:53:40.745 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.updateUser(com.example.park.pojo.dto.UpdateUserInfoDTO)
+2019-05-02_19 19:53:40.745 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findAllUser],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findAllUser()
+2019-05-02_19 19:53:40.747 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-02_19 19:53:40.748 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-02_19 19:53:40.748 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-02_19 19:53:40.750 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-02_19 19:53:40.750 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-02_19 19:53:40.829 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-02_19 19:53:40.961 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:53:38 CST 2019]; root of context hierarchy
+2019-05-02_19 19:53:41.006 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:53:41.006 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:53:41.038 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:53:41.284 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-05-02_19 19:53:41.285 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-05-02_19 19:53:41.285 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-02_19 19:53:41.290 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-05-02_19 19:53:41.290 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-05-02_19 19:53:41.292 INFO  [main] org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-05-02_19 19:53:41.292 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-05-02_19 19:53:41.302 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-05-02_19 19:53:41.322 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-05-02_19 19:53:41.520 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_1
+2019-05-02_19 19:53:41.535 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_2
+2019-05-02_19 19:53:41.579 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:53:41.603 INFO  [main] org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-05-02_19 19:53:41.612 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8084 (http)
+2019-05-02_19 19:53:41.616 INFO  [main] com.example.park.ParkApplication - Started ParkApplication in 3.225 seconds (JVM running for 3.847)
+2019-05-02_19 19:53:52.810 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-02_19 19:53:52.811 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-02_19 19:53:52.824 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2019-05-02_19 19:53:53.079 ERROR [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at java.util.Calendar.setTime(Calendar.java:1770)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:943)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:936)
+	at java.text.DateFormat.format(DateFormat.java:345)
+	at com.example.park.service.ParkService.getVO(ParkService.java:84)
+	at com.example.park.service.ParkService.end(ParkService.java:61)
+	at com.example.park.controller.ParkController.end(ParkController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02_19 19:54:41.694 INFO  [Thread-10] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:53:38 CST 2019]; root of context hierarchy
+2019-05-02_19 19:54:41.697 INFO  [Thread-10] org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-05-02_19 19:54:41.698 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-05-02_19 19:54:41.698 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-05-02_19 19:54:41.704 INFO  [Thread-10] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-05-02_19 19:54:44.310 INFO  [main] com.example.park.ParkApplication - Starting ParkApplication on bogon with PID 2180 (/Users/liubing/Desktop/code/IdeaProjects/park/target/classes started by liubing in /Users/liubing/Desktop/code/IdeaProjects/park)
+2019-05-02_19 19:54:44.312 INFO  [main] com.example.park.ParkApplication - No active profile set, falling back to default profiles: default
+2019-05-02_19 19:54:44.350 INFO  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:54:44 CST 2019]; root of context hierarchy
+2019-05-02_19 19:54:44.464 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-02_19 19:54:45.178 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e056b3da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-02_19 19:54:45.452 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8084 (http)
+2019-05-02_19 19:54:45.461 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:54:45.472 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-02_19 19:54:45.472 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-05-02_19 19:54:45.560 INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-02_19 19:54:45.560 INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1210 ms
+2019-05-02_19 19:54:45.698 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-02_19 19:54:45.699 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-05-02_19 19:54:45.701 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-02_19 19:54:45.701 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-02_19 19:54:45.701 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-02_19 19:54:45.701 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-02_19 19:54:45.702 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-05-02_19 19:54:45.702 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-05-02_19 19:54:45.793 INFO  [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+2019-05-02_19 19:54:46.152 INFO  [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-02_19 19:54:46.428 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/addCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.addCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:54:46.429 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/deleteCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.deleteCar(com.example.park.pojo.dto.CarIdDTO)
+2019-05-02_19 19:54:46.429 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/updateCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.updateCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:54:46.429 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findAll()
+2019-05-02_19 19:54:46.430 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByType],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByType(com.example.park.pojo.dto.CarTypeDTO)
+2019-05-02_19 19:54:46.430 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:54:46.431 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/addPlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.addPlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:54:46.432 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findAll()
+2019-05-02_19 19:54:46.432 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/deletePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.deletePlace(com.example.park.pojo.dto.CarPlactIdDTO)
+2019-05-02_19 19:54:46.432 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/updatePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.updatePlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:54:46.432 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByStatus],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByStatus(com.example.park.pojo.dto.PlaceStatusDTO)
+2019-05-02_19 19:54:46.433 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByPlaceName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByPlaceName(com.example.park.pojo.dto.PlaceNameDTO)
+2019-05-02_19 19:54:46.436 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/start],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.start(com.example.park.pojo.dto.ParkStartDTO)
+2019-05-02_19 19:54:46.436 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/end],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.end(com.example.park.pojo.dto.ParkEndDTO)
+2019-05-02_19 19:54:46.436 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findAll()
+2019-05-02_19 19:54:46.436 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:54:46.437 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByMasterId],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByMasterId(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:54:46.438 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/add],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.addUser(com.example.park.pojo.dto.UserDTO)
+2019-05-02_19 19:54:46.438 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.login(com.example.park.pojo.dto.LoginDTO)
+2019-05-02_19 19:54:46.438 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.deleteUser(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:54:46.439 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByRole],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByRole(com.example.park.pojo.dto.UserRoleIdDTO)
+2019-05-02_19 19:54:46.439 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByUserName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByUserName(com.example.park.pojo.dto.UserNameDTO)
+2019-05-02_19 19:54:46.439 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.updateUser(com.example.park.pojo.dto.UpdateUserInfoDTO)
+2019-05-02_19 19:54:46.439 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findAllUser],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findAllUser()
+2019-05-02_19 19:54:46.441 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-02_19 19:54:46.442 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-02_19 19:54:46.442 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-02_19 19:54:46.444 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-02_19 19:54:46.444 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-02_19 19:54:46.523 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-02_19 19:54:46.649 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:54:44 CST 2019]; root of context hierarchy
+2019-05-02_19 19:54:46.698 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:54:46.698 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:54:46.735 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:54:46.998 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-05-02_19 19:54:47.000 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-05-02_19 19:54:47.000 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-02_19 19:54:47.004 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-05-02_19 19:54:47.005 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-05-02_19 19:54:47.007 INFO  [main] org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-05-02_19 19:54:47.007 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-05-02_19 19:54:47.016 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-05-02_19 19:54:47.117 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-05-02_19 19:54:47.246 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_1
+2019-05-02_19 19:54:47.263 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_2
+2019-05-02_19 19:54:47.309 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:54:47.333 INFO  [main] org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-05-02_19 19:54:47.342 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8084 (http)
+2019-05-02_19 19:54:47.346 INFO  [main] com.example.park.ParkApplication - Started ParkApplication in 3.28 seconds (JVM running for 3.742)
+2019-05-02_19 19:54:52.853 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-02_19 19:54:52.853 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-02_19 19:54:52.865 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2019-05-02_19 19:55:10.915 ERROR [http-nio-8084-exec-7] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'carAwardNumber' not found. Available parameters are [arg3, arg2, arg1, arg0, param3, param4, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'carAwardNumber' not found. Available parameters are [arg3, arg2, arg1, arg0, param3, param4, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:204)
+	at org.apache.ibatis.reflection.wrapper.MapWrapper.get(MapWrapper.java:45)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy111.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy77.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy83.updateTimeAndAward(Unknown Source)
+	at com.example.park.service.ParkService.end(ParkService.java:65)
+	at com.example.park.controller.ParkController.end(ParkController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02_19 19:56:02.189 INFO  [Thread-10] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:54:44 CST 2019]; root of context hierarchy
+2019-05-02_19 19:56:02.192 INFO  [Thread-10] org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-05-02_19 19:56:02.193 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-05-02_19 19:56:02.193 INFO  [Thread-10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-05-02_19 19:56:02.199 INFO  [Thread-10] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-05-02_19 19:56:04.586 INFO  [main] com.example.park.ParkApplication - Starting ParkApplication on bogon with PID 2183 (/Users/liubing/Desktop/code/IdeaProjects/park/target/classes started by liubing in /Users/liubing/Desktop/code/IdeaProjects/park)
+2019-05-02_19 19:56:04.594 INFO  [main] com.example.park.ParkApplication - No active profile set, falling back to default profiles: default
+2019-05-02_19 19:56:04.630 INFO  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:56:04 CST 2019]; root of context hierarchy
+2019-05-02_19 19:56:04.733 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-02_19 19:56:05.450 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$54842cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-02_19 19:56:05.730 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8084 (http)
+2019-05-02_19 19:56:05.742 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:56:05.752 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-02_19 19:56:05.752 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-05-02_19 19:56:05.834 INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-02_19 19:56:05.834 INFO  [localhost-startStop-1] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1204 ms
+2019-05-02_19 19:56:05.972 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-02_19 19:56:05.973 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-05-02_19 19:56:05.975 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-02_19 19:56:05.975 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-02_19 19:56:05.975 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-02_19 19:56:05.975 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-02_19 19:56:05.975 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-05-02_19 19:56:05.975 INFO  [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2019-05-02_19 19:56:06.068 INFO  [main] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+2019-05-02_19 19:56:06.454 INFO  [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-02_19 19:56:06.743 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/addCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.addCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:56:06.743 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/deleteCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.deleteCar(com.example.park.pojo.dto.CarIdDTO)
+2019-05-02_19 19:56:06.743 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/updateCar],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.updateCar(com.example.park.pojo.dto.CarDTO)
+2019-05-02_19 19:56:06.744 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findAll()
+2019-05-02_19 19:56:06.744 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByType],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByType(com.example.park.pojo.dto.CarTypeDTO)
+2019-05-02_19 19:56:06.744 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/car/findCarByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarController.findCarByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:56:06.745 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/addPlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.addPlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:56:06.746 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findAll()
+2019-05-02_19 19:56:06.746 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/deletePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.deletePlace(com.example.park.pojo.dto.CarPlactIdDTO)
+2019-05-02_19 19:56:06.746 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/updatePlace],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.updatePlace(com.example.park.pojo.dto.PlaceDTO)
+2019-05-02_19 19:56:06.746 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByStatus],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByStatus(com.example.park.pojo.dto.PlaceStatusDTO)
+2019-05-02_19 19:56:06.747 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/carPlace/findPlaceByPlaceName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.CarPlaceController.findPlaceByPlaceName(com.example.park.pojo.dto.PlaceNameDTO)
+2019-05-02_19 19:56:06.750 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/start],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.start(com.example.park.pojo.dto.ParkStartDTO)
+2019-05-02_19 19:56:06.750 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findAll],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findAll()
+2019-05-02_19 19:56:06.750 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByCarNumber],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByCarNumber(com.example.park.pojo.dto.CarNumberDTO)
+2019-05-02_19 19:56:06.751 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/findByMasterId],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.findByMasterId(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:56:06.751 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/park/end],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.ParkController.end(com.example.park.pojo.dto.ParkEndDTO)
+2019-05-02_19 19:56:06.753 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/add],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.addUser(com.example.park.pojo.dto.UserDTO)
+2019-05-02_19 19:56:06.753 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.login(com.example.park.pojo.dto.LoginDTO)
+2019-05-02_19 19:56:06.753 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.deleteUser(com.example.park.pojo.dto.UserIdDTO)
+2019-05-02_19 19:56:06.753 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByRole],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByRole(com.example.park.pojo.dto.UserRoleIdDTO)
+2019-05-02_19 19:56:06.754 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findByUserName],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findByUserName(com.example.park.pojo.dto.UserNameDTO)
+2019-05-02_19 19:56:06.754 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.updateUser(com.example.park.pojo.dto.UpdateUserInfoDTO)
+2019-05-02_19 19:56:06.754 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/findAllUser],methods=[POST]}" onto public com.example.park.commonbox.Result com.example.park.controller.UserController.findAllUser()
+2019-05-02_19 19:56:06.757 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-02_19 19:56:06.757 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-02_19 19:56:06.758 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-02_19 19:56:06.760 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-02_19 19:56:06.760 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-02_19 19:56:06.844 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-02_19 19:56:06.980 INFO  [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22a637e7: startup date [Thu May 02 19:56:04 CST 2019]; root of context hierarchy
+2019-05-02_19 19:56:07.023 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:56:07.024 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:56:07.053 INFO  [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-02_19 19:56:07.296 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-05-02_19 19:56:07.298 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-05-02_19 19:56:07.298 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-02_19 19:56:07.302 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-05-02_19 19:56:07.303 INFO  [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-05-02_19 19:56:07.305 INFO  [main] org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-05-02_19 19:56:07.305 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-05-02_19 19:56:07.318 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-05-02_19 19:56:07.342 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-05-02_19 19:56:07.542 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_1
+2019-05-02_19 19:56:07.558 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findAllUsingPOST_2
+2019-05-02_19 19:56:07.599 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2019-05-02_19 19:56:07.621 INFO  [main] org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-05-02_19 19:56:07.630 INFO  [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8084 (http)
+2019-05-02_19 19:56:07.635 INFO  [main] com.example.park.ParkApplication - Started ParkApplication in 3.278 seconds (JVM running for 3.728)
+2019-05-02_19 19:56:26.827 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-02_19 19:56:26.828 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-02_19 19:56:26.841 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
